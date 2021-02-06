@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </head>
+  <body>
+   
+          
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+      <!-- Brand -->
+      <a class="navbar-brand" href="#">password management System</a>
+    
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="/">home</a>
+        </li>
+      
+    
+        <!-- Dropdown -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+            password category
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="/addnewcategory">add new category</a>
+            <a class="dropdown-item" href="/password">view all category</a>
+            
+          </div>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              password details
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="/addnewpassword">add new password</a>
+              <a class="dropdown-item" href="/viewallpassword">view all password</a>
+              
+            </div>
+        </li>
+      </ul>
+    </nav>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <h2>Password Management System</h2>
+    <div class="box">
+      <img src="images.png" alt="">
+     
+      <p id="pk"> USER LOGIN </p>
+      <form action="/" nethod="post">
+          <p>Username or Email</p>
+          <input id="in"name="name" type="text" placeholder="email" >
+          <p>password</p>
+          <input id="on" type="password" name="password" placeholder="password" > <br>           
+      <button  type="button" name="submit">Register Now</button>
+      </form>
+      <div id="riya">dont have account<a href="/signup">create a account</a></div>
+  </div>
+
+  </body>
+</html>
